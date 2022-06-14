@@ -10,7 +10,7 @@ try:
          c = len(b)
          for i in range(c):
               d = b[i + (c - 1)]
-              with open("only_software_name", "a") as f:
+              with open("only_software_name.txt", "a") as f:
                    print(d,file=f)
               break
 except(FileNotFoundError):
