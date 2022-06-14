@@ -1,8 +1,10 @@
 import time
+import os
 a = open("app.bat","w")
 a.write("reg query HKEY_CURRENT_USER\SOFTWARE\>>software_list.txt")
 a.close()
-time.sleep(10) #Within this 10 second please double click manually on the batch file that is created
+#time.sleep(10) #Within this 10 second please double click manually on the batch file that is created
+os.system("app.bat")
 try:
     for f in  open('software_list.txt'):
          a = f.replace("\\" ," ")
@@ -15,4 +17,3 @@ try:
               break
 except(FileNotFoundError):
      print("Please press the batch file manually within 10 second")
-
