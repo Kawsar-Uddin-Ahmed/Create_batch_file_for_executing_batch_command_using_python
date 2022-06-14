@@ -14,5 +14,5 @@ try:
                    print(d,file=f)
               break
 except(FileNotFoundError):
-     print("Please press the batch file manually")
+     print("Please press the batch file manually within 10 second")
 
