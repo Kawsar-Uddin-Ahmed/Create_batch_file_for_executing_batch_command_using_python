@@ -1,0 +1,8 @@
+Python homework : a=" reg query HKEY_CURRENT_USER\SOFTWARE\  >>software_list.txt"
+
+1) file write using python --> file will be batch file example : a.bat
+2) run this file a.bat
+3) grab only software name
+4) write software name in another text file
+
+
